@@ -9,6 +9,8 @@ I have used Java as a backend language in this application and I have used XML f
 
 I have implemented follow and following features, so the user of this app can follow each other and see there photos and videos uploaded bu them.
 
+In this application user can also comment on the each other photos.
+
 In this application user can easily edit his accound setting and can easily upload the images and videos easily just like in instagram app.
 
 ## Note
