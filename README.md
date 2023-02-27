@@ -16,5 +16,6 @@ The power of this application is its backend. But I can also develope applicatio
 
 ## Developer Links
 
+**Aviral Kaushik :-- [Official Website](http://aviralkaushik.epizy.com/)**
 **Aviral Kaushik :-- [Instagram](https://www.instagram.com/aviral_3101/)**
 **Aviral Kaushik :-- [Facebook](https://www.facebook.com/aviral.kaushik.16)**
