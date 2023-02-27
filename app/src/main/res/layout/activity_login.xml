@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="55dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/instagram_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:contentDescription="@string/instagram_logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:background="@color/white"
+                android:id="@+id/input_email"
+                tools:ignore="Autofill"  />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:background="@color/white"
+                android:id="@+id/input_password"
+                tools:ignore="Autofill"  />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="@string/login"
+            android:textStyle="bold|italic"
+            android:id="@+id/btn_login"
+            android:padding="12dp"
+            android:background="@drawable/white_round_background_button"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/create_account"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@null"
+            android:id="@+id/link_signup"
+            android:textColor="@color/link_blue"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/loginRequestLoadingProgressbar"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/please_wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_wait"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/loginRequestLoadingProgressbar"
+        android:layout_alignRight="@+id/loginRequestLoadingProgressbar"
+        android:layout_alignLeft="@+id/loginRequestLoadingProgressbar"
+        android:layout_alignEnd="@+id/loginRequestLoadingProgressbar"
+        android:layout_alignStart="@+id/loginRequestLoadingProgressbar" />
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/profile_photo"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/black"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_profile_photo"
+                android:id="@+id/change_profile_photo"
+                android:layout_below="@id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/link_blue"
+                android:textSize="16sp"/>
+
+            <!--Username Section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/change_profile_photo"
+                android:layout_marginTop="80dp"
+                android:id="@+id/relLayout1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="@string/username"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/input_username"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@color/white"
+                        android:inputType="textNoSuggestions"
+                        android:hint="@string/username"
+                        tools:ignore="Autofill"  />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!--Name Section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relLayout1"
+                android:layout_marginTop="15dp"
+                android:id="@+id/relLayout2">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_name"
+                    android:contentDescription="@string/display_name"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/display_name"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@color/white"
+                        android:inputType="textNoSuggestions"
+                        android:hint="@string/display_name"
+                        tools:ignore="Autofill"  />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!--Website Section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relLayout2"
+                android:layout_marginTop="15dp"
+                android:id="@+id/relLayout3">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_website"
+                    android:contentDescription="@string/website"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/website"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@color/white"
+                        android:inputType="textNoSuggestions"
+                        android:hint="@string/website"
+                        tools:ignore="Autofill"  />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!-- description section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout3"
+                android:id="@+id/relLayout4"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_description"
+                    android:contentDescription="@string/description"
+                    android:layout_centerVertical="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/description"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="40dp"
+                        android:background="@color/white"
+                        android:inputType="textNoSuggestions"
+                        android:hint="@string/description"
+                        android:layout_marginLeft="40dp"
+                        tools:ignore="Autofill"  />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/private_information"
+                android:layout_below="@id/relLayout4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:background="@drawable/white_grey_border_bottom"
+                android:id="@+id/textPrivateInfo"/>
+
+            <!-- email section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textPrivateInfo"
+                android:id="@+id/relLayout5"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/email"
+                    android:layout_centerVertical="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="40dp"
+                        android:background="@color/white"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/email"
+                        android:layout_marginLeft="40dp"
+                        tools:ignore="Autofill"  />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!-- phone number section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout5"
+                android:id="@+id/relLayout6"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/phone_number"
+                    android:layout_centerVertical="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phoneNumber"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="40dp"
+                        android:background="@color/white"
+                        android:inputType="phone"
+                        android:hint="@string/phone_number"
+                        android:layout_marginLeft="40dp"
+                        tools:ignore="Autofill"  />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</merge>

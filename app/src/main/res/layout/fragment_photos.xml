@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/open_camera"
+        android:textStyle="italic|bold"
+        android:id="@+id/open_camera"
+        android:padding="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_round_background_button"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "715442690065",
+    "project_id": "apinsta-5cc97",
+    "storage_bucket": "apinsta-5cc97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715442690065:android:c5a5267d4fc34f630bf9b0",
+        "android_client_info": {
+          "package_name": "com.aviral.apinsta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715442690065-nflaavi4td7mvkto5l888j2tr9rdsuv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aviral.apinsta",
+            "certificate_hash": "ab4f58548c3667327b26820ab192de217ae90cae"
+          }
+        },
+        {
+          "client_id": "715442690065-jdghc65ph3mqalgv44e6irp9a01f3b4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE1v6vdIzROvC7qNozbsTYvdBdDMeXz0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715442690065-jdghc65ph3mqalgv44e6irp9a01f3b4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
